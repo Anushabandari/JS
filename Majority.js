@@ -8,18 +8,15 @@ function Majority(arr)
     {
         if( !Key.has(arr[i]))
         {
-            Key.set(arr[i],1)
-             
+            Key.set(arr[i],1)          
         }
         else
         {
             Key.set(arr[i],Key.get(arr[i]) +1)
         }
-
     }
     for( var [k,v] of Key.entries())
     {
-        debugger;
         if(MostTimes< v)
         {
             MostTimes=v;
@@ -27,5 +24,4 @@ function Majority(arr)
         }
     }
      return [MajorElement,MostTimes];
-
 }
