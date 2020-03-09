@@ -1,0 +1,12 @@
+=== vs == vs = ?
+ "=" is used to assign a value to a variable.
+  ex: var i= 10
+ "==" is used to compare only values.
+  ex: 1==1 - true 
+      1=="1" - true 
+  Note: == does the type coersion (converts into similar type.)   
+"===" is used to compare both value and datatypes.
+  ex: 1===1 - true 
+      1==="1" - false(comparing datatype).
+ 
+ 
