@@ -86,3 +86,53 @@ ex: var array1=[1,2,3,4];
     
     note: if u assign array1 to a new data array2 will not have a pointer to array1.
     ex: array1=[1,3,8,8];// this wont change array2 data
+ -----------------------------------------------------------------------------------------------------------------
+var vs let vs const
+ all the above are used to declare  variables.
+ var
+   -has functional scope.
+   -will be hoisted .
+   ex:
+      function add(){
+       var name="anusha"; //this is a functional scope and cannot be accessed outside.
+       {
+         let age  = 34; //this can't be accessed outside
+       }
+       console.log(age); //is not defined
+      }
+let
+   -has block scope.
+   -will not be hoisted.
+   ex:
+      {
+       let name="anusha"; //this is a block scope and cannot be accessed outside.
+      }
+const
+   -read only value.
+   -cannot be reassigned
+   -has block scope.
+   -will not be hoisted.
+   eg: const i = 20;
+        i = 80;// error, this is readonly.
+   note: nested object values can be changed.
+   eg: const person = {
+                     name:"amisha",
+                     age: 30
+                    };
+                    
+           person.age = 40; // this is allowed
+           person = { gender: "male"} // error, this is readonly
+ --------------------------------------------------------------------------------------
+ callback
+ Any function that is passed as an argument to another function for later execution is called a callback function
+ eg: function add(){
+     }
+     
+     function load(fn){
+      fn();
+     }
+     
+     load(add);// passing add function as a callback to load funtion
+-----------------------------------------------------------------------------------------
+
+   
