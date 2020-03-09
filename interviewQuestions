@@ -8,5 +8,81 @@
 "===" is used to compare both value and datatypes.
   ex: 1===1 - true 
       1==="1" - false(comparing datatype).
+-----------------------------------------------------------------------------------------
+Is JS case sensitive ?
+
+Yes!
+ example: var i=1;
+          var I=2;
+          both i and I are different.
+-------------------------------------------------------------------------------------------
+variable scope in JS ?
+Two types of scopes in javascript
+-global scope. (Window scope)
+  global scope is that scope which is visible and accessible by all other scopes. can be accessed anywhere in the application.
+  Ex: var i= "global scope" 
+  variables not decalred with var keyword  also have global scope.
+  Ex: i="something" //globalscope.
+-local scope.      
+   Variables declared in a function are local scope and cannot be accessed outside the function.
+   Ex: function work(){
+        var i="local scope";
+       }
+ note:Global variables can be accessed in the function but local variables cannot be accessed outside the function.
+ ---------------------------------------------------------------------------------------
+ Lexical scope -
  
+ Inner function having access to the outer function variables is called lexical scope.
+ ex: function outerfunc(){
+     var q=1000;
+     function innerfunc(){
+       q=1200; // lexical scope
+     }
+ }
+ --------------------------------------------------------------------------------------
+ Undefined vs not defined
+  undefined- variable is declared but value is not assigned. 
+             ex: var i;
+             console.log(i) //undefined.
+  not defined- variable not declared and not assigned.
+               ex: console.log(name);
+               //name is not defined
+ ----------------------------------------------------------------------------------
+ Hoisting:
+ Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of 
+ their scope before code execution.
+ Two types of hoisting : variable and fucntion hoisting.
+  Ex: function add(){
+     console.log(i); // variable hoisting
+      var i=10;
+        work(); //functional hoisting
+       function work(){
+       }
+  }
+----------------------------------------------------------------------------------------------------------------
+ Closure:
  
+ Function inside another function where the inner function can access the scope of the outer function.
+ ex: function outer(){
+     var y;
+     function inner(){
+        console.log(y)
+     }
+    return inner; 
+ }
+ ----------------------------------------------------------------------------------------------------------------
+ value type vs reference type
+ 
+ value type : primitive types are value types that creates a new memory whenever we assign a value.
+ ex: var i=10;
+     var j=i;// new memory is created for j , if we change i value,j wont change.
+     i= 98;  // this wont change j value.
+     j=12; // this wont change i value.
+reference type: arrays and objects are reference types where variables share memory.
+ex: var array1=[1,2,3,4];
+    var array2=array1;     
+    array1.push(10) //changing array2 or array1 changes both the variables data because of ref type.
+    array2.push(80)// changing array2 or array1 changes both the variables data because of ref type.
+    
+    note: if u assign array1 to a new data array2 will not have a pointer to array1.
+    ex: array1=[1,3,8,8];// this wont change array2 data
