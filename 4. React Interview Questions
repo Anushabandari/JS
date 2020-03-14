@@ -10,11 +10,13 @@ It is used to create reusable components of UI.
 ----------------------------------------------------------------------------------------------
 what are the features of React?
 It supports server side rendering.
-It uses virtualDwOM instead of realDOM , since real dom manipulations are expensive.
+It uses virtualDOM instead of realDOM , since real dom manipulations are expensive.
 It is used to create reusable components of UI.
 ----------------------------------------------------------------------------------------------------------
 what is JSX?
- JSX is a javascript 
+ JSX stands for javascript XML.
+ It allows us to write HTML and javascript together in react.
+ 
 --------------------------------------------------------------------------------------------------------
 what is a component?
 There are two types of component in react, functional component and class component.
@@ -72,12 +74,42 @@ It is a plain javascript object which is used to manipulate the data within comp
  }
  -------------------------------------------------------------------------------------------------------------------
 what is the difference state vs props?
-
+Both are plain javascript objects
+Prop- Is used to pass on the input to the component.
+      It is read only.
+State- It is used to manipulate the data of the component.
+       It adds the changes to the data in the component.
+-----------------------------------------------------------------------
 what are propTypes?
-
+ Prototypes are used to check the type of the props and determine whether they are required/not.
+ ex: 
+ Hello.propTypes={
+  name: propTypes.string.isRequired,
+  jobDesc: propTypes.string
+ }
+----------------------------------------------------------------------------------
 what are lifecycles methods?
-
+Each component in react goes through three phases in a life cycle which can be manipulated and monitored, 
+they are mounting,updating,unmounting.
+-Mounting
+    constructor()
+    getDerivedStateFromProps()
+    render()
+    componentDidMount()
+    
+-Updating
+    getDerivedStateFromProps()
+    shouldComponentUpdate()
+    render()
+    getSnapshotBeforeUpdate()
+    componentDidUpdate()
+    
+-Unmounting
+    componentWillUnmount()
+-------------------------------------------------------------------------------------------------
 what are hooks?
+To use state in functional components we use hooks
+------------------------------------------------------------------------------------------------
 
 what is react routing?
 
