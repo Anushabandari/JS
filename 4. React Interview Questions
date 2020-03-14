@@ -1,1 +1,84 @@
 
+what is SPA?
+  SPA is a single page application. 
+  It render part of the application without rendering complete application.
+  It uses API calls.
+-------------------------------------------------------------------------------------------------
+what is React?
+React is an opensource frontend javascript library, created by facebook. It is used to create single page applications.
+It is used to create reusable components of UI.
+----------------------------------------------------------------------------------------------
+what are the features of React?
+It supports server side rendering.
+It uses virtualDwOM instead of realDOM , since real dom manipulations are expensive.
+It is used to create reusable components of UI.
+----------------------------------------------------------------------------------------------------------
+what is JSX?
+ JSX is a javascript 
+--------------------------------------------------------------------------------------------------------
+what is a component?
+There are two types of component in react, functional component and class component.
+
+functional component-
+  It is a stateless component.
+  accepts props as an argument to the function.
+  It uses javascript functions.
+  ex-
+   function hello(props){
+    return(<div>Hello world {props.name}</div>)
+   }
+usage- <hello name="anusha" />
+
+class component-
+  It is a statefull component.
+  It has lifecycle methods.
+  
+  ex-
+  class Hello extends React.Component{
+    render(){
+      return(<div className="Hello-world">
+                <h1>Hi!! {this.props.name} {this.props.jobDesc} </h1>
+             </div>
+            );
+        }
+    }
+ }
+  usage- <Hello name="anusha" jobDesc="IT"/>
+   <Hello name="akil" jobDesc="CEO"/>
+----------------------------------------------------------------------------------------------------  
+what are props?
+props are used to pass the data to the component.
+Props are read only.
+Input to the components are passed as HTML attributes.
+-------------------------------------------------------------------------------------------
+what is a state?
+It is a plain javascript object which is used to manipulate the data within components.
+
+ example
+ class Hello extends React.Component{
+    constructor(props){
+      super(props);
+      this.state={
+        jobDesc: "softWare developer"
+      }
+    }
+    render(){
+      return(<div className="Hello-world">
+                <h1>Hi!! {this.props.name} {this.state.jobDesc} </h1>
+             </div>
+            );
+        }
+    }
+ }
+ -------------------------------------------------------------------------------------------------------------------
+what is the difference state vs props?
+
+what are propTypes?
+
+what are lifecycles methods?
+
+what are hooks?
+
+what is react routing?
+
+what is memo?
