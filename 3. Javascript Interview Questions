@@ -164,6 +164,19 @@ It is any code in javascript where the use of function callbacks in async code b
 Generally when there is more than one level of indirection, code using callbacks can become harder to follow, 
 harder to refactor, and harder to test.
 -----------------------------------------------------------------------------------------------------
+Arrow function-
+They,re more terse(sparing in the use of words). They make managing 'This' keyword easy.
+
+----------------------------------------------------------------------------------------------------
+fetch
+fetch is a moderm way of sending network request and get information from the server.
+fetch(url,{
+  method:"get"/"post",
+  body:json.stringify(data),
+  headers:{
+    Content-Type:"application/json"
+    }
+})
 
 
  
