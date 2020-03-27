@@ -149,6 +149,10 @@ typeof
 
 the typeof operator is used to return the datatype (returns a string) of its operand. 
 -------------------------------------------------------------------------------------------
+Object.freeze()-
+This method freezes an object. A frozen object cannot be changed.  Freezing an object prevents new properties from being added to it, existing 
+properties from being removed, prevents changing the enumerability, configurability and writability of existing properties.
+---------------------------------------------------------------------------------------------
 
 
  
