@@ -153,6 +153,17 @@ Object.freeze()-
 This method freezes an object. A frozen object cannot be changed.  Freezing an object prevents new properties from being added to it, existing 
 properties from being removed, prevents changing the enumerability, configurability and writability of existing properties.
 ---------------------------------------------------------------------------------------------
+polyfills-
+
+polyfill is a piece of code (usually javascript on the web) used to provide modern functionality 
+on older browsers that do not natively support it.
+-----------------------------------------------------------------------------------------------
+Call back hell-
+
+It is any code in javascript where the use of function callbacks in async code becomes difficult or obscure to follow. 
+Generally when there is more than one level of indirection, code using callbacks can become harder to follow, 
+harder to refactor, and harder to test.
+-----------------------------------------------------------------------------------------------------
 
 
  
