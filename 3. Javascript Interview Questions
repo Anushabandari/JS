@@ -134,5 +134,23 @@ const
      
      load(add);// passing add function as a callback to load funtion
 -----------------------------------------------------------------------------------------
+parseInt()-
+
+This function parses a string and returns an integer.
+-----------------------------------------------------------------------------------------
+split()-
+This method is used to split the string into an array of substrings.
+-----------------------------------------------------------------------------------------
+join()-
+ 
+ the join methods creates and returns a new string by concatenating all of the elements in an array.
+-----------------------------------------------------------------------------------------
+typeof
+
+the typeof operator is used to return the datatype (returns a string) of its operand. 
+-------------------------------------------------------------------------------------------
+
+
+ 
 
    
