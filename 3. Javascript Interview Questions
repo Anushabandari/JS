@@ -346,6 +346,13 @@ call- invokes a function and allows you to pass parameters comma separated
 --------------------------------------------------------------------------------------------------------------------
 spread operator- 
 
+this operator allows arrays/pbjects/strings to be expanded intosingle arguments.
+example: function add(a,b,c){}
+   
+    var nums=[1,2,3];
+    add(...nums)
+example : assigning the existing array to a new array with new memory allocation with spread operator.
+      var nums2=[...nums]
 --------------------------------------------------------------------------------------------------------------------
 Rest parameter-
 
@@ -354,7 +361,13 @@ It is a new way to handle function parameter which allows us to represent an ind
  Example: function add(a,b,...otherElements){}
       add(1,2,3,4,5,6); // a=1,b=2, otherElements=[3,4,5,6]
 --------------------------------------------------------------------------------------------------------------------
-Destructing 
+Destructuring assignment - It assigns the values from arrays or properties from objects into distinct variables.
+ example : var obj={
+  name:"kitty",
+  age="16"
+ }
+ 
+ var {name,age}=obj
 --------------------------------------------------------------------------------------------------------------------
 Array:
 
@@ -391,7 +404,20 @@ reduce: It executes a given function on each element in an array resulting in a 
             //ur code here
           },intinalValue)
 -----------------------------------------------------------------------------------------------------------------------
-   
+ Default parameters (ES5 feature)
+ 
+ It allows function parameters to have default values initialized if no value or undefined is passed.
+ example: function add(a=1,b=0){
+ return a+b;
+ }
+ 
+ add(10) //return 10
+ 
+ add()//returns 1
+ 
+ add(2,3)//returns 5
+ 
+ 
   
   
   
