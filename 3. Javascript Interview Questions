@@ -182,12 +182,15 @@ fetch(url,{
 classes-
 ---------------------------------------------------------------------------------------------------------
 Try/catch/throw
-try:
+
+try:The try block contains set of statements where an exception can occur.
 
 catch:Catch block is used to handle the uncertain condition of try block. 
        A try block is always followed by a catch block, which handles the exception that 
        occurs in associated try block.
 throw: Throw keyword is used to transfer control from try block to catch block.
+-------------------------------------------------------------------------------------------------------------
+
  
 
    
