@@ -457,5 +457,14 @@ example : <html>
   
   syntax: var app= app || {}
   ---------------------------------------------------------------------------------------------------------------------------
+  Class-  Class is a blue print of an object. It contains functions and variables.
+          JS classes are syntactical sugar over javacsripts existing existing prototype based inheritance.
+  example: class Rectangle {
+       constructor(height,width){
+        this.height= height,
+        this.width=width
+       }
+  }
   
-   
+  var obj=new Rectangle(1,2)
+-----------------------------------------------------------------------------------------------------------------------------         
