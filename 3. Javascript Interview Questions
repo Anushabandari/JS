@@ -190,7 +190,13 @@ catch:Catch block is used to handle the uncertain condition of try block.
        occurs in associated try block.
 throw: Throw keyword is used to transfer control from try block to catch block.
 -------------------------------------------------------------------------------------------------------------
-
+Rest operator-
+The rest parameter syntax allows us to represent an indefinite number of arguments as an array.
+ ------------------------------------------------------------------------------------------------------------
+ Window-
+ Window is a parent object of the browser.
+ ------------------------------------------------------------------------------------------------------------
+ Async await-
  
 
    
