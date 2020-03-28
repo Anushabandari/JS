@@ -364,10 +364,26 @@ indexOf- it returns the index of the element if it is present in the array or el
 ----------------------------------------------------------------------------------------------------------------------
 Array:
 
-foreach:
-Map:
-filter:
-reduce:
+foreach:Used to iterate the arrayand doesnt return any new array.
+ example : var num= [1,2,3,4]
+          num.foreach((value,index)=>{
+            //ur code here
+          })
+Map: Used to iterate the array and returns a new array without modifying the parent array.
+  example : var num= [1,2,3,4]
+          var result=num.map((value,index)=>{
+            //ur code here
+          })
+filter: used to filter the elements and returns a new array without modying the parent array.
+  example : var num= [1,2,3,4]
+          var result=num.filter((value,index)=>{
+            //ur code here
+          })
+reduce: It executes a given function on each element in an array resulting in a single output value.
+    example : var num= [1,2,3,4]
+        var result= num.reduce((initialValue,value,index)=>{
+            //ur code here
+          },intinalValue)
 -----------------------------------------------------------------------------------------------------------------------
    
   
