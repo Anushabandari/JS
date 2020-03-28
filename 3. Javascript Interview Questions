@@ -344,9 +344,15 @@ call- invokes a function and allows you to pass parameters comma separated
           Array.isArray(nums);// true
           
 --------------------------------------------------------------------------------------------------------------------
-spread operator
+spread operator- 
+
 --------------------------------------------------------------------------------------------------------------------
-Rest operator
+Rest parameter-
+
+It is a new way to handle function parameter which allows us to represent an indefinite no. of arguments as an array.
+
+ Example: function add(a,b,...otherElements){}
+      add(1,2,3,4,5,6); // a=1,b=2, otherElements=[3,4,5,6]
 --------------------------------------------------------------------------------------------------------------------
 Destructing 
 --------------------------------------------------------------------------------------------------------------------
