@@ -352,13 +352,15 @@ Destructing
 --------------------------------------------------------------------------------------------------------------------
 Array:
 
-Push
-Pop
-unShift
-shift
-slice
-splice
-indexOf
+Push - To add an element at the end of an array.
+Pop - to delete an element from an end of an array.
+unShift- To add an element at the beginning of an array
+shift- To delete an element from the beginning of an array.
+slice- It deletes the elements from the array using the starting and ending index.
+splice- it delets the elements from the array with start index and the no of elements
+         that have to be removed from the array and it modifies the parent array.
+   Note:Splice modifies the parent array whereas slice dont.
+indexOf- it returns the index of the element if it is present in the array or else it returns -1.
 ----------------------------------------------------------------------------------------------------------------------
 Array:
 
