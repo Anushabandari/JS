@@ -271,11 +271,6 @@ ECMA6 features
 ----------------------------------------------------------------------------------------------------------
 Arrow function-
 They,re more terse(sparing in the use of words). They make managing 'This' keyword easy.
-
------------------------------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------------------------
-classes-
 ---------------------------------------------------------------------------------------------------------
 Try/catch/throw
 
@@ -292,7 +287,64 @@ The rest parameter syntax allows us to represent an indefinite number of argumen
  Window-
  Window is a parent object of the browser.
  ------------------------------------------------------------------------------------------------------------
+Call/Apply/Bind
 
- 
+All the three functions are used to execute a function with a given "this" value.
 
+call- invokes a function and allows you to pass parameters comma separated
+      example - function invite(greeting1,greeting2){
+        return greeting1 + ' ' +this.firstName+ ' ' + this.lastName+ ' '+greeting2;
+      }
+   
+   var employee1={
+      firstName:"akil",
+      lastName:"akula"
+    }
+  
+  invite.call(employee1,'Hello','How are you?'); // Hello akil akula how are you?
+  
+  apply- invokes a function and allows you to pass parameters in an array
+      example - function invite(greeting1,greeting2){
+        return greeting1 + ' ' +this.firstName+ ' ' + this.lastName+ ' '+greeting2;
+      }
+   
+   var employee1={
+      firstName:"akil",
+      lastName:"akula"
+    }
+  
+  invite.call(employee1,['Hello','How are you?']); // Hello akil akula how are you?
+  
+  Bind()
+  
+  It returns a new function and allows you to pass any no of arguments later.
+  
+     example - function invite(greeting1,greeting2){
+        return greeting1 + ' ' +this.firstName+ ' ' + this.lastName+ ' '+greeting2;
+      }
+   
+   var employee1={
+      firstName:"akil",
+      lastName:"akula"
+    }
+  
+  var callMeLater= invite.bind(employee1,'hello'); 
+  callMeLater('how are you?');// Hello akil akula how are you?
+  
+  Note: call and apply are executed immediately where bind returns a new function to execute it later.
+  ----------------------------------------------------------------------------------------------------------------
+  classes-
+  
+  -----------------------------------------------------------------------------------------------------------------
+  Array.isArray()
+  It is used to check if the variable is array or not.
+  
+  example: var nums = [];
+  
+          Array.isArray(nums);// true
+          
+ --------------------------------------------------------------------------------------------------------------------
+  
+  
+  
    
