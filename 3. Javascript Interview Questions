@@ -452,6 +452,10 @@ example : <html>
   3)Function parameters must be unique.
   
   usage: "use strict";
+  ---------------------------------------------------------------------------------------------------------------------------
+  Namespace- It avoids collisions with other objects or variables in the global name space.
   
+  syntax: var app= app || {}
+  ---------------------------------------------------------------------------------------------------------------------------
   
    
