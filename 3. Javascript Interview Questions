@@ -442,5 +442,16 @@ example : <html>
   
   when user clicks on button it first calls handleClick() then handleClick2() and then handleClick1() and so,on.... 
   To stop this from happening use event.stopPropagation();
+  -------------------------------------------------------------------------------------------------------------------------
+  use strict-
+  instructs the browser to use the strict mode, this will catch the errors. 
+  This can be used inside a function or for a complete file.
+  
+  1) Disallows global variables.
+  2)It ensures object keys are unique.
+  3)Function parameters must be unique.
+  
+  usage: "use strict";
+  
   
    
