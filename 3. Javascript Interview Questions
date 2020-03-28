@@ -254,7 +254,20 @@ fetch(url,{
     Content-Type:"application/json"
     }
 })
+---------------------------------------------------------------------------------------------------------
+ECMAScript 5 features
 
+1.Array.isArray() //determines whether a variable is an array or not.
+2. Array.forEach()//to iterate through the array.
+3. Array.map()
+4.Array.filter()
+-----------------------------------------------------------------------------------------------------------
+ECMA6 features
+1.Let 
+2.Const
+3.Spread Operator.
+4.Set
+5.Map
 ----------------------------------------------------------------------------------------------------------
 Arrow function-
 They,re more terse(sparing in the use of words). They make managing 'This' keyword easy.
