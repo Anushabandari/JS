@@ -226,14 +226,26 @@ example:
 after a payment apiCall success, call database api, then call email api and so on. All these are nested call backs. 
 ----------------------------------------------------------------------------------------------------------
 promise -
-
-
------------------------------------------------------------------------------------------------------
-Arrow function-
-They,re more terse(sparing in the use of words). They make managing 'This' keyword easy.
-
-----------------------------------------------------------------------------------------------------
-fetch
+ promise are used to handle asynchronous operations. It is an alternate approach for callback for 
+ reducing call back hell and writing cleaner code.
+ 
+ example:
+ 
+ We use then()  which takes two callback functions as parameters , one for success and one for failure.
+ -------------------------------------------------------------------------------------------------------
+ async/await
+ 
+ Its a new way to write asynchronous code. It makes asynchronous code look and behave like synchronous code.
+ 
+ usage:
+ 
+ var makeRequest= async () =>{
+   await callPayment();
+   await callDBUpdate();
+   await callSendEmail();
+ }
+ --------------------------------------------------------------------------------------------------------
+ fetch
 fetch is a moderm way of sending network request and get information from the server.
 fetch(url,{
   method:"get"/"post",
@@ -242,6 +254,12 @@ fetch(url,{
     Content-Type:"application/json"
     }
 })
+
+----------------------------------------------------------------------------------------------------------
+Arrow function-
+They,re more terse(sparing in the use of words). They make managing 'This' keyword easy.
+
+-----------------------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------------------
 classes-
