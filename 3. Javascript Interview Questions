@@ -137,13 +137,28 @@ const
 parseInt()-
 
 This function parses a string and returns an integer.
+
+usage:
+parseInt("1") //output 1
+
+parseInt("anu") //output NaN
 -----------------------------------------------------------------------------------------
 split()-
-This method is used to split the string into an array of substrings.
+Converts string to an array with a delimiter.
+
+usage:
+var input= "Anusha is a girl";
+
+input.split(" "); //output ["Anusha", "is", "a", "girl"]
 -----------------------------------------------------------------------------------------
 join()-
  
- the join methods creates and returns a new string by concatenating all of the elements in an array.
+Converts an array to string with a delimeter.
+
+usage:
+var input=  ["Anusha", "is", "a", "girl"]
+
+input.join(" "); //output "Anusha is a girl"; 
 -----------------------------------------------------------------------------------------
 typeof
 
