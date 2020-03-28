@@ -162,22 +162,72 @@ input.join(" "); //output "Anusha is a girl";
 -----------------------------------------------------------------------------------------
 typeof
 
-the typeof operator is used to return the datatype (returns a string) of its operand. 
+the typeof operator is used to return the datatype of a variable.
+
+example:
+ typeof 1 // "number"
+ typeof "Anusha" // "string"
+ typeof true // "boolean"
+ typeof undefined // "undefined"
+ typeof {} // "object"
+ typeof function // "function"
+ typeof [ ]// "object"
+ typeof null // "object"
+ 
+ note : except array and null which returns object all other datatypes returns its corresponding data type.
 -------------------------------------------------------------------------------------------
 Object.freeze()-
-This method freezes an object. A frozen object cannot be changed.  Freezing an object prevents new properties from being added to it, existing 
-properties from being removed, prevents changing the enumerability, configurability and writability of existing properties.
+It prevents changes(addition/deletion/modification) to an object.
+usage:
+
+var xyz={
+ name: "abc"
+};
+
+Object.freeze(xyz);
+xyz.name = "def" //throws an error
 ---------------------------------------------------------------------------------------------
 polyfills-
 
 polyfill is a piece of code (usually javascript on the web) used to provide modern functionality 
 on older browsers that do not natively support it.
+
+note :
+
+we can use babel polyfills to resolve this issue.
+-----------------------------------------------------------------------------------------------
+Asynchronous-
+Javascript is asynchronous which allows multiple things to happen at the same time.
+ 
+Multiple things happening at the same time.
+----------------------------------------------------------------------------------------------
+XMLHttpRequest:This object is used to make Http request from client to server using javascript.
+
+Usage: 
+
+var apiCall= new XMLHttpRequest();
+apiCall.open("get/post",url,"true/false") //true means async, false means synchronous
+
+apiCall.send() //you need to pass data in the send function
+
+apiCall.onReadyStateChange= function(){
+  if(apiCall.status==200){
+   //that means apiCall is successfull, we can write code here to execute.
+   }
+}
 -----------------------------------------------------------------------------------------------
 Call back hell-
 
-It is any code in javascript where the use of function callbacks in async code becomes difficult or obscure to follow. 
-Generally when there is more than one level of indirection, code using callbacks can become harder to follow, 
-harder to refactor, and harder to test.
+Writing nested call back functions for synchronous programming, which makes the code not readable 
+and hard to debug is called call back hell.
+
+example:
+
+after a payment apiCall success, call database api, then call email api and so on. All these are nested call backs. 
+----------------------------------------------------------------------------------------------------------
+promise -
+
+
 -----------------------------------------------------------------------------------------------------
 Arrow function-
 They,re more terse(sparing in the use of words). They make managing 'This' keyword easy.
@@ -211,7 +261,7 @@ The rest parameter syntax allows us to represent an indefinite number of argumen
  Window-
  Window is a parent object of the browser.
  ------------------------------------------------------------------------------------------------------------
- Async await-
+
  
 
    
