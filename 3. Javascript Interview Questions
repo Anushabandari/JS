@@ -417,8 +417,30 @@ reduce: It executes a given function on each element in an array resulting in a 
  
  add(2,3)//returns 5
  
+ --------------------------------------------------------------------------------------------------------
+ Https status codes -
  
+ 200- success
+ 300- redirect
+ 400- client error
+ 403- forbidden
+ 404- not found
+ 500-server error
+----------------------------------------------------------------------------------------------------------
+Event bubbling/ delegation/propagation.
+
+When an event happens on an element it first runs the event handlers on it, 
+then on its parent then all the way up elements.
+
+example : <html>
+ <div onclick="handleClick1()">
+  <div onclick="handleClick2()">
+     <button onclick="handleClick()">Submit</button>
+  </div>
+ </div>
+</html>
   
-  
+  when user clicks on button it first calls handleClick() then handleClick2() and then handleClick1() and so,on.... 
+  To stop this from happening use event.stopPropagation();
   
    
