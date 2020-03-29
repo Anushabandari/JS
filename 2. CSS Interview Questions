@@ -49,9 +49,17 @@ example :
   }
 --------------------------------------------------------------------------------------------------------------------
 What is box model?
-
+Box model describes visual formatting for an element. 
+It has properties like :
+1.Padding
+2.Border
+3.Margins
 --------------------------------------------------------------------------------------------------------------------
 What is responsive web design?
+This technique is used to display the web page perfectly on every screen size and device.
+We dont have to create different web pages for each device.
+
+Example: mobile,desktop, laptop, tablets.
 --------------------------------------------------------------------------------------------------------------------
 What are css positions ?
 --------------------------------------------------------------------------------------------------------------------
