@@ -88,27 +88,76 @@ To have a generic default CSS property values we use this.To override the defaul
 of the browser and to have same default values. 
 --------------------------------------------------------------------------------------------------------------------
 How do u hide an element using css?
-
+option1
+ visibility : hidden
+ 
+option2 
+ display:none
 --------------------------------------------------------------------------------------------------------------------
 What is the difference between visibility : hidden and display:none ?
+visibility:hidden elements take up the space on page whereas display:none wont take up space on page.
 --------------------------------------------------------------------------------------------------------------------
 What is Z index?
+It helps elements to overlap one-another and element with higher Z index is stacked above than a lower-index
 --------------------------------------------------------------------------------------------------------------------
 What are pseudo classes?
+pseudo class is used to define a special state of an element.
+
+example:
+ style an element when it gets focused.
+ pseudo class is represented using :
+ 
+ div:hover{
+ background-color:blue;
+ }
 --------------------------------------------------------------------------------------------------------------------
 What are pseudo elements?
+pseudo element is used to style specified parts of an element.
+
+example :
+
+style the first letter /orline of an element.
+
+p::first-line {
+color : #ff00000;
+}
 --------------------------------------------------------------------------------------------------------------------
 What are different units used in CSS?
+there are two categories relative length and absolute length. 
+
+example of absolute length : px (pixel)
+example of relative length : em ()
 --------------------------------------------------------------------------------------------------------------------
 What is the overflow property in css used for ?
+It delas with the content overflow and element box. (content is too big to fit in a specified area.)
+example: overflow scroll;
+         overflow none;
 --------------------------------------------------------------------------------------------------------------------
 What is !importance ?  
+It overwrites all previous styling rules.
+
+element {
+  color : blue !importance;
+}
 --------------------------------------------------------------------------------------------------------------------
 What is css flex box?
+flexible box layout model. It is a new layout model in CSS3. It places the elements dynamically based on 
+the available properties. It has ability to modify the child elements to fill the available space in 
+different screen sizes.
 --------------------------------------------------------------------------------------------------------------------
 What are css pre-processors?
+Its a program that lets u generate from preprocessors own unique syntax.
+example: nested selector.
+
+example of pre-processors:
+SASS, LESS
 --------------------------------------------------------------------------------------------------------------------
 What are vendor-prefixes?
+To support the few styles in different browsers we use this vendor prefixes for styles.
+example :
+ -webkit- used for Chrome,safari.
+ -moz-  Firefox
+ -ms-  Internet Explorer and Microsoft.
 --------------------------------------------------------------------------------------------------------------------
 What are functions/mixins?
 --------------------------------------------------------------------------------------------------------------------
