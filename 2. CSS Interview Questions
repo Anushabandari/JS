@@ -1,10 +1,55 @@
 what is css?
+CSS means cascading style sheets , it adds styles to the web page.
+--------------------------------------------------------------------------------------------------------------------
+How does CSS work under the hood?
+The browser converts HTML CSS into DOM. DOM represents the document in the computer memory.
+It combines the documents content with its style.Browser then displays the contents of the DOM.
+
+Load HTML ----> Parse HTML---->Create DOM True -----> Display
+                     |                                    |
+                  Loads CSS---->Parse CSS------------------>   
 --------------------------------------------------------------------------------------------------------------------
 Differeny ways of using css in an application /?
+
+Inline
+Adding the style in the element itself using style attribute.
+example :
+
+<div style="width:200px;height:100px"></div>
+
+Internal
+Adding the CSS styles in style tag under header.
+<head>
+  <style>
+    .app{
+      width:100px;
+      height:200px;
+    }
+  </styel>
+</head>
+
+External
+write ur css in a separate file and add it to ur HTML page using the link tag.
+Example : <link rel="url/styles.css"></link>
 --------------------------------------------------------------------------------------------------------------------
 What is diff between class selectors and id selectors?
+Class selectors can be reused whereas id selectors are for single elements. 
+
+class selector- represented by a .
+id - rep by #
+
+example : 
+
+  .app{
+    width:50px;
+  }
+  
+   #appOne{
+    width:50px;
+  }
 --------------------------------------------------------------------------------------------------------------------
 What is box model?
+
 --------------------------------------------------------------------------------------------------------------------
 What is responsive web design?
 --------------------------------------------------------------------------------------------------------------------
@@ -34,9 +79,11 @@ What is !importance ?
 --------------------------------------------------------------------------------------------------------------------
 What is css flex box?
 --------------------------------------------------------------------------------------------------------------------
-
+What are css pre-processors?
 --------------------------------------------------------------------------------------------------------------------
+What are vendor-prefixes?
 --------------------------------------------------------------------------------------------------------------------
+What are functions/mixins?
 --------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
