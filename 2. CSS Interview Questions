@@ -62,14 +62,33 @@ We dont have to create different web pages for each device.
 Example: mobile,desktop, laptop, tablets.
 --------------------------------------------------------------------------------------------------------------------
 What are media queries ?
+They are used for RWD.It applies different styles for diff devices.
+Example: @media only screen and (max width: 600px){
+//css styles
+}
 --------------------------------------------------------------------------------------------------------------------
 What are css positions ?
+
+This specifies the type of positioning method used for an element.
+There are totally 5 positions.
+Position: fixed;
+Position: static;
+Position: absolute;
+Position: sticky;
+Position: relative;
+
+Elements are then positioned using top, bottom, left and right properties.
 --------------------------------------------------------------------------------------------------------------------
 What are css spirits?
+CSS spirits are used to reduce the loading time for a web page because it combines various small images into one image.
+It reduces no. of Http requests and hence the loading time.
 --------------------------------------------------------------------------------------------------------------------
-What is reset or normalize css?
+What is reset or normalize CSS?
+To have a generic default CSS property values we use this.To override the default settings 
+of the browser and to have same default values. 
 --------------------------------------------------------------------------------------------------------------------
-How do u hide an element in css?
+How do u hide an element using css?
+
 --------------------------------------------------------------------------------------------------------------------
 What is the difference between visibility : hidden and display:none ?
 --------------------------------------------------------------------------------------------------------------------
