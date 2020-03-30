@@ -3,11 +3,19 @@
 ---------------------------------------------------------------------------------------------------------------------
 How to improve the performance of the application
 
-1) use CDN urls for caching
+1) use CDN(content delivery network) urls for caching
 2) include the javascript script file at the end of the html file
 3) include 'DEFER' keyword for parallel download of the javascript files
+
+    <script src="demo_defer.js" defer></script>
+    
 4) use lazy loading - delay the load of the unused files for later.
+
+    const OtherComponent = React.lazy(() => import('./OtherComponent'));
+
 5) minify the js code
+    example: webpack
+    
 6) remove unsed code 
 
 
@@ -46,7 +54,7 @@ We used Agile methodology
 - we will have planning on the day of the previous sprint end day to assign the sprint tasks to the team
 ---------------------------------------------------------------------------------------------------------------------
 testing
- - I used Jest and engyme for testing the application
+ - I used Jest and engyme for unit testing the application
 ---------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------
 
