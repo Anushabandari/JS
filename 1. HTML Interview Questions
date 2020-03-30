@@ -17,7 +17,12 @@ HTML5 features
 DOCTYPE declaration – <!DOCTYPE html>
 header tag - <header> </header>
 footer tag - <footer> </footer>
+----------------------------------------------------------------------------------------------------------------------
+what is DOCTYPE in html
 
+
+It tells the browser that the document being rendered is an HTML document
+It is placed on top on the html document.
 -----------------------------------------------------------------------------------------------------------------------
  What are inline elements and block-level elements in HTML?
  
