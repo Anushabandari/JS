@@ -1,1 +1,131 @@
 
+What does HTML stand for?
+
+HTML stands for Hypertext Markup Language.
+-----------------------------------------------------------------------------------------------------------------------
+Write the basic structure of the HTML template?
+<html>
+    <head>
+       <title></title>
+    </head>
+    <body>
+    </body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------
+HTML5 features
+
+DOCTYPE declaration – <!DOCTYPE html>
+header tag - <header> </header>
+footer tag - <footer> </footer>
+
+-----------------------------------------------------------------------------------------------------------------------
+ What are inline elements and block-level elements in HTML?
+ 
+ Block elements take the full available width and always start from a new line.
+ It will stretch itself to the full available width of the available container width.
+ 
+example: <div>, <p>, <img>, <section> and many more.
+ 
+ Inline elements are the elements that will only take the width that is required to fit into the container.
+ 
+ex: span, a tags
+
+-----------------------------------------------------------------------------------------------------------------------
+block vs inline
+
+block elements
+1) horizontally aligned
+2) takes complete width
+3) div, p tages
+
+inline elements
+1) vertically aligned
+2) takes content width
+3) span, a tags
+
+-----------------------------------------------------------------------------------------------------------------------
+how to convert a block element to inline?
+
+using css display property:
+
+from block to inline:
+
+  display: inline
+
+from inline to block:
+
+  display: block
+ 
+-----------------------------------------------------------------------------------------------------------------------
+what are meta tags in html?
+
+Meta tags are used to tell the search engine about the page contents
+It tell the browser about the page description, author of the template, keywords.
+
+example:
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<meta name="description" content="HTML interview questions">
+<meta name="author" content="Author Name">
+<meta name="copyright" content="All Rights Reserved">
+
+-----------------------------------------------------------------------------------------------------------------------
+Explain list elements in HTML.
+
+Ordered List (<ol>) – An Ordered List or ol tag are the list which will list the items in an ordered way, 
+i.e. numbered or alphabetically.
+
+Unordered List (<ul>) – An Unordered List or ul tag is the list which will list the items in an unordered way, 
+i.e. in bulleted format or in any other format.
+
+-----------------------------------------------------------------------------------------------------------------------
+What is Anchor tag and how can you open an URL into a new tab when clicked?
+
+Anchor tag in HTML is used for linking between two different web pages .
+
+Hyperlinks can be displayed in three ways:
+
+Unvisited Link – These links are blue in color and underlined.
+Visited Link – These links are purple in color and underlined.
+Active Link – These links are red in color and underlined.
+
+To open an url into a new tab in the browser upon a click, we need to add target attribute equal to _blank.
+
+<a href=”#” target=”_blank”></a>
+
+-----------------------------------------------------------------------------------------------------------------------
+what are Semantic elements in HTML.
+
+Semantic elements are HTML elements which represent its meaning to the browser.
+
+This is used for screen readers(for accessiblity: people with disabilities)
+
+Example: <p> tag is used to represents a paragraph
+
+-----------------------------------------------------------------------------------------------------------------------
+Define attributes in HTML tag
+
+HTML tag contains a field inside their tag which is called attributes of that tag
+
+example:
+<img src=”#”> // src is an attribute
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
