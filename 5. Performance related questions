@@ -1,1 +1,43 @@
 
+
+---------------------------------------------------------------------------------------------------------------------
+How to improve the performance of the application
+
+1) use CDN urls for caching
+2) include the javascript script file at the end of the html file
+3) include 'DEFER' keyword for parallel download of the javascript files
+4) use lazy loading - delay the load of the unused files for later.
+5) minify the js code
+6) remove unsed code 
+7) 
+
+
+---------------------------------------------------------------------------------------------------------------------
+Explain the architecture of the project?
+
+example of the project structure
+
+EasyPay
+  |
+   --> package.json
+   --> package-lock.json
+   --> node_modules
+   --> webpack.js
+   --> index.js
+   --> index.js
+   --> api folder
+   --> src 
+        |
+         --> components
+                |
+                 -->shared components
+         --> redux
+                |
+                 --> store
+                 --> reducers
+                 
+  
+---------------------------------------------------------------------------------------------------------------------
+
+                 
+                 
