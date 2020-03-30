@@ -32,6 +32,14 @@ External
 write ur css in a separate file and add it to ur HTML page using the link tag.
 Example : <link rel="url/styles.css"></link>
 --------------------------------------------------------------------------------------------------------------------
+What are CSS selectors :
+
+id selector
+class selector
+element selector
+attribute selector
+* - universal selector - to select all elements.
+--------------------------------------------------------------------------------------------------------------------
 What is diff between class selectors and id selectors?
 Class selectors can be reused whereas id selectors are for single elements. 
 
