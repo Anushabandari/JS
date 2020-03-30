@@ -110,7 +110,15 @@ they are mounting,updating,unmounting.
 what are hooks?
 To use state in functional components we use hooks
 ------------------------------------------------------------------------------------------------
+controlled vs uncontrolled component
 
+controlled component
+In a controlled component, form data is handled by a React component. 
+
+uncontrolled component
+In uncontrolled components, where form data is handled by the DOM itself.
+
+------------------------------------------------------------------------------------------------
 what is react routing?
 
 what is memo?
