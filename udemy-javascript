@@ -1,4 +1,10 @@
 object -
-
 ease of access
 fast insertion/removal
+--------------------------------
+Big O of objects -
+
+insertion, removal , access - O(1)
+searching-O(N)
+--------------------------------
+
