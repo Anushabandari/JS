@@ -7,4 +7,6 @@ Big O of objects -
 insertion, removal , access - O(1)
 searching-O(N)
 --------------------------------
+algorithm - a process or set of steps to accomplish a certain task
+------------------------------------
 
