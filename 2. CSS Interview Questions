@@ -154,7 +154,7 @@ the available properties. It has ability to modify the child elements to fill th
 different screen sizes.
 --------------------------------------------------------------------------------------------------------------------
 What are css pre-processors?
-Its a program that lets u generate from preprocessors own unique syntax.
+Its a program that lets u generate css from preprocessors own unique syntax.
 example: nested selector.
 
 example of pre-processors:
