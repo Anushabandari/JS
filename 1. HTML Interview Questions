@@ -62,12 +62,12 @@ ex: span, a tags
 block vs inline
 
 block elements
-1) horizontally aligned
+1) vertical aligned
 2) takes complete width
 3) div, p tages
 
 inline elements
-1) vertically aligned
+1) horizontal aligned
 2) takes content width
 3) span, a tags
 
