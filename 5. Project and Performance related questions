@@ -1,4 +1,10 @@
 
+Deployment process?
+We developers are responsible to build and deploy the code in development environment using jenkins(tool used tobuild, test, 
+and deploy the software)
+Infrastructure team is responsible to build and deploy to QA environment using jenkins where QA will perform manual 
+and functional testings and sign-offs on the build and then the same build code is pushed to production by Infrastucture
+team using Jenkins.
 
 ---------------------------------------------------------------------------------------------------------------------
 How to improve the performance of the application
