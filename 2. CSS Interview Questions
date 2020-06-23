@@ -155,7 +155,10 @@ different screen sizes.
 --------------------------------------------------------------------------------------------------------------------
 What are css pre-processors?
 Its a program that lets u generate css from preprocessors own unique syntax.
-example: nested selector.
+example: variables
+@lightColor: lightBlue
+now this varible can be used everywhere.
+https://medium.com/syncfusion/https-medium-com-suresh-mohan-less-vs-css-6cb0ffae752e
 
 example of pre-processors:
 SASS, LESS
