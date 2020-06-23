@@ -1,3 +1,13 @@
+React vs Angular
+Angular using Real DOM where as React uses Virtual Dom which provides better performance
+Angular has 2-way binding where react is one-way binding
+Anglar using typescript where as react uses JSX
+Angular was developed by Google where as React is developed by facebook
+Angular is a MVC framework where as react is just a UI layer
+
+what is virtual DOM? How does it improve the performance? How does it work?
+
+
 
 what is SPA?
   SPA is a single page application. 
