@@ -128,6 +128,23 @@ they are mounting,updating,unmounting.
 -------------------------------------------------------------------------------------------------
 what are hooks?
 To use state in functional components we use hooks
+eg:
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
 ------------------------------------------------------------------------------------------------
 controlled vs uncontrolled component
 
@@ -141,3 +158,51 @@ In uncontrolled components, where form data is handled by the DOM itself.
 what is react routing?
 
 what is memo?
+Whenever the data pass to the functional component is same and if we don't want to re-render the component
+then we can use Memo, which improves performance.
+
+Example:
+import { memo } from 'React';
+
+const View = memo(({ name }) => `Hi, I'm ${name}`);
+https://medium.com/@trekinbami/using-react-memo-and-memoization-1970eb1ed128
+------------------------------------------------------------------------------------------------
+what is context in react?
+Context provides a way to pass data through the components without having to pass props down manually at every level,
+
+example:
+const ThemeContext = React.createContext('light');
+
+class App extends React.Component {
+  render() {
+    // Use a Provider to pass the current theme to the tree below.
+    // Any component can read it, no matter how deep it is.
+    // In this example, we're passing "dark" as the current value.
+    return (
+      <ThemeContext.Provider value="dark">
+        <Toolbar />
+      </ThemeContext.Provider>
+    );
+  }
+}
+
+// A component in the middle doesn't have to
+// pass the theme down explicitly anymore.
+function Toolbar() {
+  return (
+    <div>
+      <ThemedButton />
+    </div>
+  );
+}
+
+class ThemedButton extends React.Component {
+  // Assign a contextType to read the current theme context.
+  // React will find the closest theme Provider above and use its value.
+  // In this example, the current theme is "dark".
+  static contextType = ThemeContext;
+  render() {
+    return <Button theme={this.context} />;
+  }
+}
+
