@@ -1,21 +1,22 @@
 React vs Angular
 Angular using Real DOM where as React uses Virtual Dom which provides better performance
-Angular has 2-way binding where react is one-way binding
 Anglar using typescript where as react uses JSX
 Angular was developed by Google where as React is developed by facebook
 Angular is a MVC framework where as react is just a UI layer
 Learning curve is more in Angular compare to React
+Angular has 2-way binding where react is one-way binding
 -------------------------------------------------------------------------------------------------
 what is virtual DOM? How does it improve the performance? How does it work?
-Virtual DOM is a in-memory copy of the actual DOM, the main idea of virtual DOM is instead of updating the actual DOM 
-it will first update the virtual DOM and then reflects those changes to the actual DOM, since actual DOM manipulation is 
-expensive.
+Virtual DOM is an in-memory copy of the actual DOM, the main idea of virtual DOM is instead of updating the actual DOM 
+it will first update the virtual DOM and then reflects those changes to the actual DOM which will improve 
+the performance, since actual DOM manipulation is expensive.
 
 Whenever we change something(like updating the state variables using setstate) in JSX first virtual DOM is updated and then 
 it updates the actual DOM.
 
-React maintains 2 copies of vitual DOM one is updated virtual DOM and second is preupdated virtual DOM, so it compares 
+React maintains 2 copies of vitual DOM, one is updated virtual DOM and second is pre-updated virtual DOM, so it compares 
 both virtual DOMs and calculates the difference and then updates the actual DOM.
+Comparing the virtual DOMs objects are faster than the actual DOM.
 -------------------------------------------------------------------------------------------------
 what is SPA?
   SPA is a single page application. 
