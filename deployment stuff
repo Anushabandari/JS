@@ -1,6 +1,10 @@
 Agile methodology -
 ---------------------------------------------------------------------------------------------------------------------------------
 CI/CD
+
+CI is continuous integration, whenever we create a pull request(push), CI job runs
+ and checks if the build is successful and the test cases are passed or not. Once the CI is successful 
+ and the PR is merged to develop branch, Continuous Deployment will deploy the code to the development environment.
 ---------------------------------------------------------------------------------------------------------------------------------
 Debugging
 ---------------------------------------------------------------------------------------------------------------------------------
