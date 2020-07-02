@@ -10,6 +10,13 @@ Debugging
 ---------------------------------------------------------------------------------------------------------------------------------
 Environment
 there are 4 environments
+
+1. dev environment - developer builds the code as per business requirement.
+2. QA environment- QA does the manual testing and functional testing (selenium)
+3. Regression environment- business owners do the UAT (user acceptance testing) , 
+                            usually, here the corner cases are not considered.It is also called
+                            happy path testing.
+4. Production environment - It is the live environment.
 ---------------------------------------------------------------------------------------------------------------------------------
 Github
 
