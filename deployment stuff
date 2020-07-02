@@ -7,6 +7,13 @@ CI is continuous integration, whenever we create a pull request(push), CI job ru
  and the PR is merged to develop branch, Continuous Deployment will deploy the code to the development environment.
 ---------------------------------------------------------------------------------------------------------------------------------
 Debugging
+ 
+ First I will trace the logs with the correlation id (obtained from JIRA ticket) to understand where the 
+ user faced the issue and also gather the info regarding the browser , browser version & geo-location,
+ and try to reproduce this issue on the regression environment.
+
+ fixing live issue-
+    we will make a patch in the master branch (as it has latest production code).
 ---------------------------------------------------------------------------------------------------------------------------------
 Environment
 there are 4 environments
