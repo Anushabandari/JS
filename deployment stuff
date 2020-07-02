@@ -12,4 +12,29 @@ Environment
 there are 4 environments
 ---------------------------------------------------------------------------------------------------------------------------------
 Github
+
+1. How to get latest code from remote to local (ex: remote (develop) to local(develop))
+    git pull
+2. How to create a new branch.
+    git checkout -b branchname
+3. How to check which branch you are in ?
+    git branch
+4.How to push your code (local to remote)?
+    a. Add all the files which needs to be pushed.
+        git add . (to add all the files at once)
+        git add filename(to add individual files)
+    b. Commit your code.
+        git commit -m "your message"
+    c. push your code.
+        git push origin name
+5. How to create pull request?
+     go to github.com , open the project and click on the pull request button
+     and select the source branch which needs to be pushed to the destination branch.
+
+     example: develop <-- branchName 
+6. How to rebase your local branch with remote changes?
+    git --rebase origin/remoteBranchName
+    example : git --rebase develop
+    
+
 ---------------------------------------------------------------------------------------------------------------------------------
