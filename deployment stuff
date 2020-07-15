@@ -1,4 +1,15 @@
 Agile methodology -
+
+-Agile is a project management methodology that uses short development cycle called  "sprints"
+-We follow a two week sprint, for every sprint we have a sprint planning where we get the task assigned.
+ before every sprint planning we also demo the last sprint task and take feedback on it.
+- We also have everyday standups in the morning to disscuss sprint task progress(what we worked yesterday
+and what are we going to do today and if there are any blockers)
+
+-Agile follows iterative approach for software delivery
+ that builds software incrementally from the start of the project , 
+ instead of trying to deliver it all at once near the end.
+-
 ---------------------------------------------------------------------------------------------------------------------------------
 CI/CD
 
@@ -7,9 +18,23 @@ CI is continuous integration, whenever we create a pull request(push), CI job ru
  and the PR is merged to develop branch, Continuous Deployment will deploy the code to the development environment.
 ---------------------------------------------------------------------------------------------------------------------------------
 Debugging
+ 
+ First I will trace the logs with the correlation id (obtained from JIRA ticket) to understand where the 
+ user faced the issue and also gather the info regarding the browser , browser version & geo-location,
+ and try to reproduce this issue on the regression environment.
+
+ fixing live issue-
+    we will make a patch in the master branch (as it has latest production code).
 ---------------------------------------------------------------------------------------------------------------------------------
 Environment
 there are 4 environments
+
+1. dev environment - developer builds the code as per business requirement.
+2. QA environment- QA does the manual testing and functional testing (selenium)
+3. Regression environment- business owners do the UAT (user acceptance testing) , 
+                            usually, here the corner cases are not considered.It is also called
+                            happy path testing.
+4. Production environment - It is the live environment.
 ---------------------------------------------------------------------------------------------------------------------------------
 Github
 
